@@ -6,6 +6,8 @@ Tracking changes to an enterprise's resources is critical for reasons such as mo
 
 This Python solution queries for changes made to a specific Azure resource type (such as microsoft.storage/storageaccounts) within a provided Azure subscription.  The Azure Resource Graph provides up to 14 days of changes for a resource.
 
+The solution produces JSON file containing the changes made to the resources.
+
 ## Requirements
 
 ### Python Runtime and Modules
@@ -16,3 +18,7 @@ This Python solution queries for changes made to a specific Azure resource type 
 ## Setup
 To use this solution, a security prinicpal must be created in the Azure AD Tenant with appropriate permissions on the Azure Subscription and Azure Resource types.  Microsoft provides [instructions](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-api-authentication) on how to create that principal.  The reader role is sufficient to query for the resources and the resource chnages.
 
+A sample parameters file is included.
+
+## Running
+python azure-resource-changes-query.py --parameterfile parameters.json
