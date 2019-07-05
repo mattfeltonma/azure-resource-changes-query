@@ -1,0 +1,10 @@
+{
+    "tenantname":"YOUR TENANT NAME",
+    "exportfilename":"C:\\Temp\\resource_changes.json",
+    "client_id":"YOUR CLIENT ID",
+    "client_secret": "YOUR CLIENT SECRET",
+    "start_time": "1900-01-01",
+    "end_time": "2900-12-31",
+    "resource_type": "microsoft.storage/storageaccounts",
+    "subscription": "YOUR SUBSCRIPTION ID"
+}
