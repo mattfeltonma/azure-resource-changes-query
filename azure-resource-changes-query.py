@@ -183,7 +183,7 @@ def main():
 
         # Setup a logger and optionally a logging file if the user specified
         if args.logfile != None:
-            create_logger(logfile)
+            create_logger(args.logfile)
         else:
             create_logger()
 
